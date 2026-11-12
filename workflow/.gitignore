@@ -1,0 +1,61 @@
+# ---- Secrets & secrets-like ----
+.env
+.env.backups/
+install-report.json
+dist/
+*.log
+logs/
+npm-debug.log
+
+# ---- Dependencies ----
+node_modules/
+
+# ---- Chrome / browser login state (never share) ----
+.chrome-chatgpt-debug-profile/
+.chatgpt-browser-profile/
+.chrome-auto-profile-*/
+.chrome-profile-*/
+.real-chrome-profile-link/
+
+# ---- Real client data & runtime outputs (never share) ----
+客户照片/client_*/
+生成结果/client_*/
+图片结果/
+审美结果/
+向量记录/
+结果/
+质检结果/
+运行记录/
+待处理客户照片/
+
+# ---- Feishu runtime state ----
+workflow/inbox/feishu_uploads/
+workflow/inbox/feishu_batches/
+workflow/inbox/feishu_runs/
+workflow/inbox/*.json
+workflow/inbox/*.jsonl
+workflow/current_client.json
+workflow/latest_result.json
+workflow/feedback_sessions/current_feedback_session.json
+workflow/feedback_backups/
+workflow/mimo_runs/
+workflow/mimo_test/
+workflow/archive/
+workflow/diagnostics/
+workflow/local_core_manifest*.json
+workflow/example_rename_manifest.json
+
+# ---- Editor / OS / caches ----
+.codex/
+.claude/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# ---- DO NOT ignore shared deliverables ----
+!输出结果/run_20260604-191910917/*.txt
+!模板索引/current_template_index.json
+!docs/PDF_TUTORIAL.md
+!docs/PDF_TUTORIAL.html
+!docs/*.pdf
+!.env.example
